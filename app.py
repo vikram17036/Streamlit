@@ -4,7 +4,7 @@ os.system('pip install pinecone-client')
 os.system('pip install python-dotenv')
 
 import streamlit as st
-import openai
+
 from pinecone import Pinecone
 
 from dotenv import load_dotenv
