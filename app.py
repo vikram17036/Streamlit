@@ -9,9 +9,9 @@ import os
 load_dotenv()
 
 # Initialize APIs
-openai.api_key = os.getenv("OPENAI_API_KEY")
-api_key = os.getenv("PINECONE_API_KEY")
-host = os.getenv("PINECONE_HOST")
+openai.api_key = st.secrets["OPENAI_API_KEY"]
+api_key = st.secrets["PINECONE_API_KEY"]
+host = st.secrets["PINECONE_HOST"]
 pc = Pinecone(api_key=api_key)
 index_name = "career-guidance"
 
